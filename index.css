@@ -55,6 +55,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 #skills-list div {
@@ -63,6 +64,7 @@ hr {
     padding: 10px;
     color: white;
     background-color: #53A551;
+    margin-bottom: 20px;
 }
 
 #projects h2 {

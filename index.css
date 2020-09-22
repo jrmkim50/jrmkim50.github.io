@@ -1,0 +1,70 @@
+body {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+.row {
+    margin-top: 30px;
+}
+
+.image-col {
+    text-align: center;
+}
+
+.job-image {
+    max-width: 100%;
+}
+
+.timeline {
+    font-style: italic;
+}
+
+.site-section {
+    margin-top: 50px;
+}
+
+#intro {
+    margin-top: 80px;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+#navigation div {
+    margin-right: 10px;
+}
+
+#skills {
+    text-align: right;
+}
+
+#skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#skills-list div {
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #53A551;
+}
+
+#projects h2 {
+    text-align: right;
+}

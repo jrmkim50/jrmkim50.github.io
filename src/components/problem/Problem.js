@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import problemDict from "../../consts/problemIDtoProblem";
-import Background from "../general/Background/Background";
-import backgroundImage from "../../assets/paint-background.jpeg";
 import './Problem.css';
 
 export default function Problem() {
@@ -35,12 +33,11 @@ export default function Problem() {
 
     if (loading) {
         return (
-            <Background path={backgroundImage} />
+            <div/>
         )
     } else if (validProblem) {
         return (
             <div>
-                <Background path={backgroundImage} />
                 { !loading && <ReactMarkdown children={ markdown }/> }
                 { error && <p className="errorMessage">{ error }</p> }
             </div>
@@ -48,7 +45,6 @@ export default function Problem() {
     } else {
         return (
             <div>
-                <Background path={backgroundImage} />
                 <h2>Problem { problemID } not found!</h2>
             </div>
         )

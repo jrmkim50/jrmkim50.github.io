@@ -8,12 +8,14 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./views/home/Home";
 import Problems from "./views/problems/Problems";
 import Problem from "./components/problem/Problem";
-import './App.css'
+import BackgroundImage from "./components/general/BackgroundImage";
+import './App.css';
 
 export default function App() {
   return (
     <Router>
       <div className="app">
+        <BackgroundImage/>
         <Navbar/>
         <Switch>
           <Route path="/problems/:problemID">

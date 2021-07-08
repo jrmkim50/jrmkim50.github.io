@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d8bf9a7.chunk.css",
+    "main.js": "/static/js/main.f0bec2d3.chunk.js",
+    "main.js.map": "/static/js/main.f0bec2d3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.be252cb6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.be252cb6.js.map",
+    "static/js/2.e6895657.chunk.js": "/static/js/2.e6895657.chunk.js",
+    "static/js/2.e6895657.chunk.js.map": "/static/js/2.e6895657.chunk.js.map",
+    "static/js/3.61ae3ffc.chunk.js": "/static/js/3.61ae3ffc.chunk.js",
+    "static/js/3.61ae3ffc.chunk.js.map": "/static/js/3.61ae3ffc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2d8bf9a7.chunk.css.map": "/static/css/main.2d8bf9a7.chunk.css.map",
+    "static/js/2.e6895657.chunk.js.LICENSE.txt": "/static/js/2.e6895657.chunk.js.LICENSE.txt",
+    "static/media/blue-watercolor-background.ef755953.jpeg": "/static/media/blue-watercolor-background.ef755953.jpeg",
+    "static/media/missing-number.md": "/static/media/missing-number.cb150a4f.md",
+    "static/media/paint-background.1d25dcd2.jpeg": "/static/media/paint-background.1d25dcd2.jpeg",
+    "static/media/repetitions.md": "/static/media/repetitions.0e3b42ec.md",
+    "static/media/weird-algorithm.md": "/static/media/weird-algorithm.2182bc21.md"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be252cb6.js",
+    "static/js/2.e6895657.chunk.js",
+    "static/css/main.2d8bf9a7.chunk.css",
+    "static/js/main.f0bec2d3.chunk.js"
+  ]
+}

@@ -14,9 +14,7 @@ export default function Problem() {
     useEffect(() => {
         setValidProblem(problemID in problemDict);
         setLoading(false);
-        getMarkdown(problemID).then(text => {
-            setMarkdown(text);
-        })
+        getMarkdown(problemID);
     }, [problemID])
 
     const getMarkdown = async problemID => {
@@ -24,29 +22,20 @@ export default function Problem() {
             let md = require(`../../assets/markdowns/${problemID}.md`);
             const response = await fetch(md.default)
             const text = await response.text();
-            return text;
+            setMarkdown(text);
         } catch(err) {
             setError(err.message);
         }
-        return '';
     }
 
-    if (loading) {
-        return (
-            <div/>
-        )
-    } else if (validProblem) {
-        return (
+    return loading ? <div/> :
+        validProblem ? 
             <div>
                 { !loading && <ReactMarkdown children={ markdown }/> }
                 { error && <p className="errorMessage">{ error }</p> }
             </div>
-        )
-    } else {
-        return (
+            :
             <div>
                 <h2>Problem { problemID } not found!</h2>
             </div>
-        )
-    }
 }

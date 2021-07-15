@@ -1,10 +1,10 @@
 # Missing Number
 
 ## Explanation
-We are given n-1 numbers that are between 1 and n. We need to find the number between 1 and n that is not present.  
-We start by calculating the sum of all of the numbers between 1 and n.
-Then, we read each number that is inputted and subtract that from our sum.
-The leftover sum at the end has to be the missing number.
+We are given n-1 numbers that are between 1 and n. We need to find the number between 1 and n  
+that is not present. We start by calculating the sum of all of the numbers between 1 and n.  
+Then, we read each number that is inputted and subtract that from our sum. The leftover sum  
+at the end has to be the missing number.
 
 ## Code
     #include <iostream>

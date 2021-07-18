@@ -12,7 +12,7 @@ I determined that fact by noticing this: once you find k distinct numbers from 1
 (1 + n) * n / 4, the rest of the numbers from 1 to n will also sum (1 + n) * n / 4. If you try to  
 create this sum by choosing numbers in a decreasing order (so your first pick number is the  
 largest one and your last pick is the smallest one), then I do not see how you cannot end up with  
-desired sum. Unfortunately, I do not have a rock solid explanation, but that approach seemed to   work.
+desired sum. Unfortunately, I do not have a rock solid explanation, but that approach seemed to work.
 
 ## Code
     #include <iostream>

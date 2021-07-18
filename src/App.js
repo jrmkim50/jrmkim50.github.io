@@ -1,33 +1,35 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./views/home/Home";
-import Problems from "./views/problems/Problems";
-import Problem from "./components/problem/Problem";
 import BackgroundImage from "./components/general/BackgroundImage";
+import Navbar from "./components/navbar/Navbar"
 import './App.css';
+const Home = lazy(() => import("./views/home/Home"));
+const Problems = lazy(() => import("./views/problems/Problems"));
+const Problem = lazy(() => import("./components/problem/Problem"));
 
 export default function App() {
   return (
     <Router>
       <div className="app">
-        <BackgroundImage/>
-        <Navbar/>
-        <Switch>
-          <Route path="/problems/:problemID">
-            <Problem />
-          </Route>
-          <Route path="/problems">
-            <Problems />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Suspense fallback={<div>Loading</div>}>
+          <BackgroundImage/>
+          <Navbar/>
+          <Switch>
+            <Route path="/problems/:problemID">
+              <Problem />
+            </Route>
+            <Route path="/problems">
+              <Problems />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Suspense>
       </div>
     </Router>
   );

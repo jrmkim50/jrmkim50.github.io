@@ -8,6 +8,8 @@ const problemDict = {
     "two-knights": "Two Knights",
     "two-sets": "Two Sets",
     "bit-strings": "Bit Strings",
+    "trailing-zeros": "Trailing Zeros",
+    "coin-piles": "Coin Piles"
 }
 
 export default problemDict;

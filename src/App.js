@@ -1,6 +1,5 @@
 import React, { lazy, Suspense } from "react";
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -13,24 +12,22 @@ const Problem = lazy(() => import("./components/problem/Problem"));
 
 export default function App() {
   return (
-    <Router>
-      <div className="app">
-        <Suspense fallback={<div>Loading</div>}>
-          <BackgroundImage/>
-          <Navbar/>
-          <Switch>
-            <Route path="/problems/:problemID">
-              <Problem />
-            </Route>
-            <Route path="/problems">
-              <Problems />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Suspense>
-      </div>
-    </Router>
+    <div className="app">
+      <Suspense fallback={<div>Loading</div>}>
+        <BackgroundImage/>
+        <Navbar/>
+        <Switch>
+          <Route path="/problems/:problemID">
+            <Problem />
+          </Route>
+          <Route path="/problems">
+            <Problems />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Suspense>
+    </div>
   );
 }

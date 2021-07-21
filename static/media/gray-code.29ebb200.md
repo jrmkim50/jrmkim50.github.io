@@ -7,7 +7,7 @@ realized that if you combine a gray code sequence with its reversed version, you
 the next gray code sequence.
 
 If we take n = 2, for instance, we get 00 01 11 10 10 11 01 00. Now, if we attach a 0 to the first  
-half's elements and a 1 to the last half's elements, we get the gray code sequence for n = 3: 
+half's elements and a 1 to the last half's elements, we get the gray code sequence for n = 3:  
 000 001 011 010 110 111 101 100. 
 
 By combining two graycode sequences, we ensure that the first half of the new sequence and the  

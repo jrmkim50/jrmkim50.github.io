@@ -7,7 +7,7 @@ decided to use recursion.
 My recursive function takes three arguments: a string of characters to choose from, a string  
 that will eventually be a permutation of the original string, and a set of permuted strings.  
 In C++, sets store items in sorted order, so that data structure will allow us to print  
-permutations in alphabetical order. We can make new permutations with the following approach.
+permutations in alphabetical order. We can make new permutations with the following approach.  
 First, remove one character from the string of characters and attach it to the permutation string.  
 Then, create permutations with the remaining characters and concatenate the first character with  
 each smaller-sized permutation. Repeat this process for each character.

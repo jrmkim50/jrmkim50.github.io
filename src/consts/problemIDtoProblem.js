@@ -9,7 +9,11 @@ const problemDict = {
     "two-sets": "Two Sets",
     "bit-strings": "Bit Strings",
     "trailing-zeros": "Trailing Zeros",
-    "coin-piles": "Coin Piles"
+    "coin-piles": "Coin Piles",
+    "palindrome-reorder": "Palindrome Reorder",
+    "gray-code": "Gray Code",
+    "towers-of-hanoi": "Towers of Hanoi",
+    "creating-strings": "Creating Strings",
 }
 
 export default problemDict;

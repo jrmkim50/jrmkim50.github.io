@@ -14,6 +14,7 @@ const problemDict = {
     "gray-code": "Gray Code",
     "towers-of-hanoi": "Towers of Hanoi",
     "creating-strings": "Creating Strings",
+    "apple-division": "Apple Division",
 }
 
 export default problemDict;

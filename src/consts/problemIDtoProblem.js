@@ -15,7 +15,8 @@ const problemDict = {
     "towers-of-hanoi": "Towers of Hanoi",
     "creating-strings": "Creating Strings",
     "apple-division": "Apple Division",
-    "chessboard-and-queens" : "Chessboard and Queens",
+    "chessboard-and-queens": "Chessboard and Queens",
+    "digit-queries": "Digit Queries",
 }
 
 export default problemDict;

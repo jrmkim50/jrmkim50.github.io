@@ -7,7 +7,7 @@ you are working with numbers that are of the same length.
 
 To implement this strategy, I started counting upwards from 0. I increased my count by a power of  
 10 each time. Once I counted more than the desired number of digits, I knew that I was at the  
-upper bound of my power of 10. From there, I figured out how many digits I had overcounted by, 
+upper bound of my power of 10. From there, I figured out how many digits I had overcounted by,  
 and then, I used that difference to find what number contained the desired position. Then, I  
 took a difference one more time to figure out which digit of that number I should print.
 

@@ -17,6 +17,7 @@ const problemDict = {
     "apple-division": "Apple Division",
     "chessboard-and-queens": "Chessboard and Queens",
     "digit-queries": "Digit Queries",
+    "grid-paths": "Grid Paths",
 }
 
 export default problemDict;

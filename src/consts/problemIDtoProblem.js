@@ -18,6 +18,7 @@ const problemDict = {
     "chessboard-and-queens": "Chessboard and Queens",
     "digit-queries": "Digit Queries",
     "grid-paths": "Grid Paths",
+    "distinct-numbers": "Distinct Numbers",
 }
 
 export default problemDict;

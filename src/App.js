@@ -6,9 +6,12 @@ import {
 import BackgroundImage from "./components/general/BackgroundImage";
 import Navbar from "./components/navbar/Navbar"
 import './App.css';
+import problemIDs from "./consts/problemIDtoProblem";
+import securityIDs from "./consts/securityIDs";
 const Home = lazy(() => import("./views/home/Home"));
 const Problems = lazy(() => import("./views/problems/Problems"));
-const Problem = lazy(() => import("./components/problem/Problem"));
+const Post = lazy(() => import("./components/post/Post"));
+const Security = lazy(() => import("./views/security/Security"));
 
 export default function App() {
   return (
@@ -17,11 +20,17 @@ export default function App() {
         <BackgroundImage/>
         <Navbar/>
         <Switch>
-          <Route path="/problems/:problemID">
-            <Problem />
+          <Route path="/problems/:id">
+            <Post ids = {problemIDs}/>
           </Route>
           <Route path="/problems">
             <Problems />
+          </Route>
+          <Route path="/security/:id">
+            <Post ids = {securityIDs}/>
+          </Route>
+          <Route path="/security">
+            <Security />
           </Route>
           <Route path="/">
             <Home />

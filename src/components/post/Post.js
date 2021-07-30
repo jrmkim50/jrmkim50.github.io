@@ -6,24 +6,29 @@ import './Post.css';
 export default function Post({ ids }) {
     const { id } = useParams();
     const [loading, setLoading] = useState(true);
-    const [validID, setValidID] = useState(true);
+    const [validID, setValidID] = useState(false);
     const [error, setError] = useState('');
     const [markdown, setMarkdown] = useState('');
 
     useEffect(() => {
         setLoading(true);
-        console.log(id, ids);
         setValidID(id in ids);
-        getMarkdown(id);
+        setLoading(id in ids);
     }, [id, ids])
+
+    useEffect(() => {
+        if (validID) {
+            getMarkdown(id);
+        }
+    }, [validID, id])
 
     const getMarkdown = async id => {
         try {
             let md = require(`../../assets/markdowns/${id}.md`);
             const response = await fetch(md.default)
             const text = await response.text();
-            console.log(text);
             setMarkdown(text);
+            setError('');
         } catch(err) {
             setError(err.message);
         } finally {
@@ -31,14 +36,16 @@ export default function Post({ ids }) {
         }
     }
 
-    return loading ? <div/> :
+    return (
+        loading ? <div/> :
         validID ? 
             <div>
-                { (!loading && !error) && <ReactMarkdown children={ markdown }/> }
+                { !loading && <ReactMarkdown children={ markdown }/> }
                 { error && <p className="errorMessage">{ error }</p> }
             </div>
             :
             <div>
                 <h2>{ id } not found!</h2>
             </div>
+    );
 }

@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[5],{223:function(e,i,t){"use strict";t.r(i),t.d(i,"default",(function(){return c}));t(0),t(89);var s=t(1);function c(){return Object(s.jsxs)("div",{className:"home",children:[Object(s.jsx)("h1",{className:"typing",children:"Hi! I'm Jeremy."}),Object(s.jsx)("h2",{className:"typing",children:"Welcome to my website."})]})}},89:function(e,i,t){}}]);
+//# sourceMappingURL=5.04d15270.chunk.js.map

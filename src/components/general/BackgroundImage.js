@@ -6,8 +6,14 @@ import { useLocation } from "react-router-dom";
 
 export default function BackgroundImage() {
     const path = useLocation().pathname;
-    const backgroundPath = path.includes("problems") ? 
-        PaintBackground : BlueBackground;
+    const createBackgroundPath = (pathName) => {
+        if (pathName.includes("problems") || pathName.includes("security")) {
+            return PaintBackground;
+        } else {
+            return BlueBackground;
+        }
+    }
+    const backgroundPath = createBackgroundPath(path);
     const style = createBackground(backgroundPath);
     return (
         <div style={style}/>

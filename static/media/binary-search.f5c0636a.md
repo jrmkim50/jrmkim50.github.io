@@ -5,7 +5,7 @@ my implementation. For instance, when I split my array in half, am I supposed to
 midpoint? There are these small details in the implementation that can really throw off your  
 results.
 
-I saw this [video](https://www.youtube.com/watch?v=tgVSkMA8joQ&t=337s) some time ago, and I thought that it gave a great way to think about binary search.  
+I saw this [video](https://www.youtube.com/watch?v=tgVSkMA8joQ) some time ago, and I thought that it gave a great way to think about binary search.  
 I used the tips in that video to implement the binary search algorithm again. Below is the code  
 and some notes.
 

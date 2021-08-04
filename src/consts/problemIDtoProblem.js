@@ -19,6 +19,7 @@ const problemDict = {
     "digit-queries": "Digit Queries",
     "grid-paths": "Grid Paths",
     "distinct-numbers": "Distinct Numbers",
+    "binary-search": "A Note on Binary Search",
 }
 
 export default problemDict;

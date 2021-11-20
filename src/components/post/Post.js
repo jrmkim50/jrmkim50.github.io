@@ -24,28 +24,33 @@ export default function Post({ ids }) {
 
     const getMarkdown = async id => {
         try {
-            let md = require(`../../assets/markdowns/${id}.md`);
+            let md = await import(`../../assets/markdowns/${id}.md`);
             const response = await fetch(md.default)
             const text = await response.text();
             setMarkdown(text);
             setError('');
         } catch(err) {
-            setError(err.message);
+            if (process.env.NODE_ENV === 'development') {
+                setError(err.message, err.stack);
+            } else {
+                setError('Trouble getting article. Try again, please!')
+            }
         } finally {
             setLoading(false);
         }
     }
 
     return (
-        loading ? <div/> :
-        validID ? 
-            <div>
-                { !loading && <ReactMarkdown children={ markdown }/> }
-                { error && <p className="errorMessage">{ error }</p> }
-            </div>
-            :
-            <div>
-                <h2>{ id } not found!</h2>
-            </div>
+        loading ? 
+            <div/> :
+            validID ? 
+                <div>
+                    { !loading && <ReactMarkdown children={ markdown }/> }
+                    { error && <p className="errorMessage">{ error }</p> }
+                </div>
+                :
+                <div>
+                    <h2>{ id } not found!</h2>
+                </div>
     );
 }

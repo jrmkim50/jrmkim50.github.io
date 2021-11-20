@@ -20,6 +20,8 @@ const problemDict = {
     "grid-paths": "Grid Paths",
     "distinct-numbers": "Distinct Numbers",
     "binary-search": "A Note on Binary Search",
+    "milk-factory": "USACO Bronze Milk Factory Problem",
+    "subarray-sums": "Subarray Sums",
 }
 
 export default problemDict;

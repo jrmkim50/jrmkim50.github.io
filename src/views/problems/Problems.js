@@ -2,7 +2,6 @@ import React from "react";
 import {
     Link,
 } from 'react-router-dom';
-import './Problems.css';
 import problemIDtoProblem from '../../consts/problemIDtoProblem.js';
 
 /*

@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[13],{205:function(i,t,e){"use strict";e.r(t),t.default=e.p+"static/media/coin-piles.e5e3978e.md"}}]);
+//# sourceMappingURL=13.8a70a13d.chunk.js.map

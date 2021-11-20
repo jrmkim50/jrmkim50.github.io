@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[30],{222:function(i,t,s){"use strict";s.r(t),t.default=s.p+"static/media/two-knights.b28331aa.md"}}]);
+//# sourceMappingURL=30.bbb246e4.chunk.js.map

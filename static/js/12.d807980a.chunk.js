@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[12],{204:function(i,s,a){"use strict";a.r(s),s.default=a.p+"static/media/chessboard-and-queens.77ab21aa.md"}}]);
+//# sourceMappingURL=12.d807980a.chunk.js.map

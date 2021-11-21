@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[24],{215:function(i,t,e){"use strict";e.r(t),t.default=e.p+"static/media/palindrome-reorder.121d5e47.md"}}]);
+//# sourceMappingURL=24.fe57c476.chunk.js.map

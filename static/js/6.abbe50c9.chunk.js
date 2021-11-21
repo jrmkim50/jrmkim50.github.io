@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[6],{233:function(i,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return r}));n(0);var e=n(1);function r(){return Object(e.jsx)("div",{children:Object(e.jsx)("h1",{children:"Page not found."})})}}}]);
+//# sourceMappingURL=6.abbe50c9.chunk.js.map

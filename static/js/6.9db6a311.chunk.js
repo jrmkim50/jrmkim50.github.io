@@ -1,2 +1,0 @@
-(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[6],{228:function(t,e,i){"use strict";i.r(e),i.d(e,"default",(function(){return o}));i(0);var c=i(7),n=i(17),r=i(1);function o(){return Object(r.jsxs)("div",{children:[Object(r.jsx)("h2",{children:"Check out my solutions to problems from CSES.fi:"}),Object(r.jsx)("ol",{children:Object.keys(n.a).map((function(t){return Object(r.jsx)("li",{children:Object(r.jsx)(c.b,{to:"/problems/".concat(t),children:n.a[t]})},t)}))})]})}}}]);
-//# sourceMappingURL=6.9db6a311.chunk.js.map

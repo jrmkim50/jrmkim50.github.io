@@ -1,2 +1,0 @@
-(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[22],{214:function(i,t,s){"use strict";s.r(t),t.default=s.p+"static/media/number-spiral.510e728a.md"}}]);
-//# sourceMappingURL=22.12ebf29d.chunk.js.map

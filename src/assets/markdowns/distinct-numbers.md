@@ -1,8 +1,8 @@
 # Distinct Numbers
 ## Explanation
-To solve this problem, you can sort the array of numbers. Once sorted, you can keep track of the  
-previous number. Once you encounter a number that is different from the previous number, you will  
-know that you have found a new number.
+To solve this problem, you can sort the array of numbers. Once sorted, you can keep 
+track of the previous number. Once you encounter a number that is different from the 
+previous number, you will know that you have found a new number.
 ## Code
     #include <iostream>
     #include <algorithm>

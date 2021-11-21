@@ -1,8 +1,8 @@
 # Apple Division
 ## Explanation
-I used recursion to solve this problem. You can find the minimum difference by comparing the  
-minimum difference if you placed an apple in one pile vs the other pile. If you keep repeating  
-this strategy, you will find the difference.
+I used recursion to solve this problem. You can find the minimum difference by comparing 
+the minimum difference if you placed an apple in one pile vs the other pile. If you keep 
+repeating this strategy, you will find the difference.
 ## Code
     #include <iostream>
     #include <vector>

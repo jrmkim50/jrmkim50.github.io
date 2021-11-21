@@ -42,10 +42,19 @@ export default function Post({ ids }) {
 
     return (
         loading ? 
-            <div/> :
+            <div>Loading</div> :
             validID ? 
-                <div>
-                    { !loading && <ReactMarkdown children={ markdown }/> }
+                <div style={{ maxWidth: '90vw' }}>
+                    { !loading && 
+                      <ReactMarkdown 
+                          children={ markdown }
+                          components = {{
+                              code: ({ node, ...props }) => (
+                                <p style={{ whiteSpace: 'pre-wrap' }} {...props}/>
+                              )
+                          }}
+                      /> 
+                    }
                     { error && <p className="errorMessage">{ error }</p> }
                 </div>
                 :

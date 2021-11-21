@@ -1,16 +1,17 @@
 # Two Knights
 ## Explanation
-For this problem, we need to find how many ways we can place two knights on a nxn chessboard, so  
-they do not attack each other. That number is equal to (n x (n-1)) / 2, or nC2, subtracted by  
-2 times the number of 2x3 rectangles and 3x2 rectangles in the nxn board. We subtract 2 times the  
-number of 2x3 and 3x2 rectangles because each of those rectangles contains 2 places where you  
-could not place two knights (the opposite corners).
+For this problem, we need to find how many ways we can place two knights on a nxn 
+chessboard, so they do not attack each other. That number is equal to (n x (n-1)) / 2, 
+or nC2, subtracted by 2 times the number of 2x3 rectangles and 3x2 rectangles in the 
+nxn board. We subtract 2 times the number of 2x3 and 3x2 rectangles because each of 
+those rectangles contains 2 places where you could not place two knights (the opposite 
+corners).
 
-One tough thing about this problem is that the order you place the knights does not matter. If  
-you place a knight at position A and place another knight at position B, swapping those knights  
-will not create another invalid way to place the knights. The problem just asks for how many ways  
-you could place 2 knights on a chessboard. If you find one way to place two knights on a chessboard  
-then you found just that one way.
+One tough thing about this problem is that the order you place the knights does not 
+matter. If you place a knight at position A and place another knight at position B, 
+swapping those knights will not create another invalid way to place the knights. The 
+problem just asks for how many ways you could place 2 knights on a chessboard. If you 
+find one way to place two knights on a chessboard then you found just that one way.
 ## Code
     #include <iostream>
     #define ll long long

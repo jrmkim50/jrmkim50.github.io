@@ -1,18 +1,8 @@
 # Chessboard and Queens
 ## Explanation
-This problem can be solved with a complete search. For this search, I used recursion. The  
-recursive strategy goes like this: place one queen in the first column of the first row and find  
-the total number of ways to place 7 queens in the remaining positions. Repeat this for the other  
-columns in the first row and sum all of those totals together. The recursive algorithm is only  
-half of the solution though. In order to create an efficient solution, you need to find an  
-efficient way to figure out whether you can place a queen in a certain position.
+This problem can be solved with a complete search. For this search, I used recursion. The recursive strategy goes like this: place one queen in the first column of the first row and find the total number of ways to place 7 queens in the remaining positions. Repeat this for the other columns in the first row and sum all of those totals together. The recursive algorithm is only half of the solution though. In order to create an efficient solution, you need to find an efficient way to figure out whether you can place a queen in a certain position.
 
-You can find this information by maintaining an array of statuses: one for the columns, another  
-for the diagonals that slant right (they slant like this: / ), another for the diagonals that  
-slant left (like \ ), and an array of strings that marks which positions have been taken. If you  
-want to find whether a position is available, you can check that the corresponding column is  
-available, that the diagonals it touches are avialbale, and that the actual position on the board  
-is available. 
+You can find this information by maintaining an array of statuses: one for the columns, another for the diagonals that slant right (they slant like this: / ), another for the diagonals that slant left (like \ ), and an array of strings that marks which positions have been taken. If you want to find whether a position is available, you can check that the corresponding column is available, that the diagonals it touches are avialbale, and that the actual position on the board is available. 
 
 With this information, you can implement the recursive strategy as described.
 ## Code

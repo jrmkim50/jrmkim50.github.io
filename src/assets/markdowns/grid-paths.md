@@ -1,17 +1,19 @@
 # Grid Paths
 ## Explanation
-For this problem, I used depth first search. The total number of paths that follow the specified  
-format is equal to the sum of the number of paths that start from my neighboring grid cells. While  
-a little complicated, this implementation is not too hard. However, in order to print the solution  
-before the timelimit, you need additional optimizations. These optimizations will end a search  
-along a particular path when it becomes clear that you cannot possibly cover every cell and move  
-from the grid's top left corner to the bottom left corner. I made two optimizations.
+For this problem, I used depth first search. The total number of paths that follow 
+the specified format is equal to the sum of the number of paths that start from my 
+neighboring grid cells. While a little complicated, this implementation is not too 
+hard. However, in order to print the solution before the timelimit, you need additional 
+optimizations. These optimizations will end a search along a particular path when it 
+becomes clear that you cannot possibly cover every cell and move from the grid's top 
+left corner to the bottom left corner. I made two optimizations.
 
-First, if a path could not proceed forward, but it could move left and right, then I would stop  
-searching along that path. When this situation happens, you will not be able to cover one side of  
-the grid once you make a turn. The turn creates a wall that blocks the left half from the right  
-half. Second, if two cells on the path meet so that the cells' opposite corners touch, then  
-you created a diagonal wall. As a result, you should also stop searching along that path.  
+First, if a path could not proceed forward, but it could move left and right, then I 
+would stop searching along that path. When this situation happens, you will not be able 
+to cover one side of the grid once you make a turn. The turn creates a wall that blocks 
+the left half from the right half. Second, if two cells on the path meet so that the 
+cells' opposite corners touch, then you created a diagonal wall. As a result, you should 
+also stop searching along that path.  
 
 These two optimizations allowed the program to finish within the time limit.
 ## Code

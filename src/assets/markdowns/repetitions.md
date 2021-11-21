@@ -1,10 +1,10 @@
 # Repetitions
 ## Explanation
-For this problem, we will iterate through the string. We will keep track of the  
-maximum length substring consisting of the same character. While iterating through the string,  
-we will also how many times our current character was repeated consecutively.  
-When we see a new character, we will start a new substring and update the maximum  
-substring length accordingly.
+For this problem, we will iterate through the string. We will keep track of the 
+maximum length substring consisting of the same character. While iterating through 
+the string, we will also how many times our current character was repeated 
+consecutively. When we see a new character, we will start a new substring and 
+update the maximum substring length accordingly.
 
 ## Code
     #include <iostream>

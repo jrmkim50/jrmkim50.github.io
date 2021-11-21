@@ -1,21 +1,23 @@
 # USACO Bronze Milk Factory Problem
 
 ## Explanation
-Given n nodes of a directed graph, we want to find the node with the smallest value such that we  
-can go to any other node from it. We can solve this by trying each node starting from the node  
-with weight 1.  
+Given n nodes of a directed graph, we want to find the node with the smallest 
+value such that we can go to any other node from it. We can solve this by trying 
+each node starting from the node with weight 1.  
 
-For each node, we will look at its neighbors. If any of the node's connections with its neighbors  
-are not directed back towards it, then stop analyzing that node. Since we want to find the lowest  
-value node where you can go to any node, we will analyze the node with one higher value. If the  
-node's direct neighbors all lead back towards the node, perform a depth first search starting from  
-each neighbor. During this search, sum the value of each node that is visited. Since there are  
-only n-1 connections between the nodes, we will know that we visited every node if the sum of all  
-visited nodes equals the sum of all n values. 
+For each node, we will look at its neighbors. If any of the node's connections 
+with its neighbors are not directed back towards it, then stop analyzing that node. 
+Since we want to find the lowest value node where you can go to any node, we will 
+analyze the node with one higher value. If the node's direct neighbors all lead back 
+towards the node, perform a depth first search starting from each neighbor. During 
+this search, sum the value of each node that is visited. Since there are only n-1 
+connections between the nodes, we will know that we visited every node if the sum 
+of all visited nodes equals the sum of all n values. 
 
-Also, here is a note on how to represent the graph. Use an adjacency list to keep track of the  
-graph's neighbors regardless of direction. Keep a separate list where the list index is the  
-starting node and the value is the destination node.
+Also, here is a note on how to represent the graph. Use an adjacency list to keep 
+track of the graph's neighbors regardless of direction. Keep a separate list where 
+the list index is the starting node and the value is the destination node.
+
 ## Code
     #include <iostream>
     #include <vector>

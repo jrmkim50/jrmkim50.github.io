@@ -1,18 +1,20 @@
 # Digit Queries
 ## Explanation
-This was quite the problem 🤡. In my opinion, the key to solving this problem is to figure out  
-which power of 10 the desired position lies in. Once you know that the position lies in between  
-say 1000 and 9999, you can figure out what digit lies at the desired position more easily because  
-you are working with numbers that are of the same length.
+This was quite the problem 🤡. In my opinion, the key to solving this problem is to 
+figure out which power of 10 the desired position lies in. Once you know that the 
+position lies in between say 1000 and 9999, you can figure out what digit lies at the 
+desired position more easily because you are working with numbers that are of the same 
+length.
 
-To implement this strategy, I started counting upwards from 0. I increased my count by a power of  
-10 each time. Once I counted more than the desired number of digits, I knew that I was at the  
-upper bound of my power of 10. From there, I figured out how many digits I had overcounted by,  
-and then, I used that difference to find what number contained the desired position. Then, I  
-took a difference one more time to figure out which digit of that number I should print.
+To implement this strategy, I started counting upwards from 0. I increased my count by a 
+power of 10 each time. Once I counted more than the desired number of digits, I knew that 
+I was at the upper bound of my power of 10. From there, I figured out how many digits I 
+had overcounted by, and then, I used that difference to find what number contained the 
+desired position. Then, I took a difference one more time to figure out which digit of 
+that number I should print.
 
-This problem had many opportunities for making small calculation mistakes. My suggestion is to try  
-out a few examples, and try to figure out a common calculation between those examples.
+This problem had many opportunities for making small calculation mistakes. My suggestion 
+is to try out a few examples, and try to figure out a common calculation between those examples.
 ## Code
     #include <iostream>
     #include <string>

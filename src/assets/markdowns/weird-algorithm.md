@@ -1,8 +1,9 @@
 # Weird Algorithm
 
 ## Explanation
-This is a simulation problem. If the number is even, divide by 2; if the number is odd,  
-multiply by 3 and add 1. Do this until the number is equal to 1 and print each step of the process.  
+This is a simulation problem. If the number is even, divide by 2; if the number 
+is odd, multiply by 3 and add 1. Do this until the number is equal to 1 and 
+print each step of the process.  
 
 ## Code
     #include <iostream>

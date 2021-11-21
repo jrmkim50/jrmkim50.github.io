@@ -42,7 +42,7 @@
 }
 
 @keyframes show {
-    from { opacity: 0 }
+    from { opacity: 0.5 }
     to { opacity: 1 }
 }
 

@@ -12,6 +12,7 @@ const Home = lazy(() => import("./views/home/Home"));
 const Problems = lazy(() => import("./views/problems/Problems"));
 const Post = lazy(() => import("./components/post/Post"));
 const Security = lazy(() => import("./views/security/Security"));
+const NotFound = lazy(() => import("./views/NotFound"));
 
 export default function App() {
   return (
@@ -32,9 +33,10 @@ export default function App() {
           <Route path="/security">
             <Security />
           </Route>
-          <Route path="/">
+          <Route path="/" exact>
             <Home />
           </Route>
+          <Route component={NotFound}/>
         </Switch>
       </Suspense>
     </div>

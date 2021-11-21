@@ -1,11 +1,11 @@
 # Permutations
 ## Explanation
-This problem can be solved with some casework. If the number is 1, the solution is just 1.  
-If the number is less than 3, we cannot find a "beautiful" permutation. However, if the  
-number is above 3, we can place all of the even numbers between 1 and n together and then  
-all of the odd numbers together.  
+This problem can be solved with some casework. If the number is 1, the solution is just 1. 
+If the number is less than 3, we cannot find a "beautiful" permutation. However, if the 
+number is above 3, we can place all of the even numbers between 1 and n together and 
+then all of the odd numbers together.  
 
-We do the even numbers first and then the odd to accomodate the case where n equals 4.  
+We do the even numbers first and then the odd to accomodate the case where n equals 4. 
 If we do 1 3 2 4, then the 3 and 2 are consecutive numbers. But, 2 4 1 3 works fine.
 
 ## Code

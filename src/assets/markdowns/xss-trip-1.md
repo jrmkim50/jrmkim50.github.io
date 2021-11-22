@@ -7,7 +7,7 @@ vulnerabilities so easily. Websites are more secure, and we can give malicious h
 🖕. 
 
 Still, I continued to search. After all, code injection is #3 on the OWASP top 10, so there
-has to be something for me to find. I decided to refine my search to online forums. They are 
+should be something for me to find(?). I decided to refine my search to online forums. They are 
 filled with user generated content, and they are complicated projects to manage; there are many 
 components on these sites, so it's not unreasonable for a team to miss a bug occasionally (which 
 is why you should do defense in depth). So, off I went, and I found a moderately active website. 

@@ -1,0 +1,2 @@
+(this["webpackJsonpjrmkim50.github.io"]=this["webpackJsonpjrmkim50.github.io"]||[]).push([[37],{236:function(i,t,c){"use strict";c.r(t),t.default=c.p+"static/media/blue-watercolor-background.c0f26325.jpeg"}}]);
+//# sourceMappingURL=37.15a9c40b.chunk.js.map
